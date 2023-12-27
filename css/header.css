@@ -1,0 +1,39 @@
+
+.header{
+    background-color: var(--primary-color);
+    .conta-header{
+        max-width: var(--max-width);
+        margin: auto;
+        .cont-header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            .logo{
+                width: 50px;
+                padding: 5px;
+                background-color: white;
+                border-radius: 50%;
+                border: 2px solid white;
+                img{
+                    width: 100%;
+                }
+            }
+            .menu{
+                display: flex;
+                flex-wrap: wrap;
+                & a{
+                    color: var(--font-white);
+                    padding: 25px 10px;
+                    transition: var(--transition);
+                    &:hover{
+                        background-color: var(--tertiary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
