@@ -1,6 +1,7 @@
 
 .header{
-    background-color: var(--primary-color);
+    border-bottom: 1px solid black;
+    
     .conta-header{
         max-width: var(--max-width);
         margin: auto;
@@ -11,25 +12,26 @@
             align-items: center;
             max-width: 1200px;
             margin: auto;
+            min-height: 100px;
             .logo{
                 width: 50px;
-                padding: 5px;
-                background-color: white;
-                border-radius: 50%;
-                border: 2px solid white;
+                
                 img{
                     width: 100%;
+                    border: 2px solid rgb(255, 3, 3);
+                    border-radius: 50%;
                 }
             }
             .menu{
                 display: flex;
                 flex-wrap: wrap;
                 & a{
-                    color: var(--font-white);
+                    color: var(--font-dark);
                     padding: 25px 10px;
                     transition: var(--transition);
+                    text-decoration: none;
                     &:hover{
-                        background-color: var(--tertiary-color);
+                        color: var(--tertiary-color);
                     }
                 }
             }
