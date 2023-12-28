@@ -1,37 +1,57 @@
 
 .header{
-    border-bottom: 1px solid black;
-    
+    border-bottom: calc(var(--border) / 16) solid var(--dark-color-transp);
+    background-color: var(--dark-color);
+    position: fixed;
+    width: 100%;
+    z-index: 4;
     .conta-header{
-        max-width: var(--max-width);
+        max-width: var(--max-width-xl);
         margin: auto;
         .cont-header{
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            max-width: var(--max-width-m);
+            min-height: 80px;
             margin: auto;
-            min-height: 100px;
             .logo{
                 width: 50px;
-                
                 img{
                     width: 100%;
-                    border: 2px solid rgb(255, 3, 3);
+                    border: calc(var(--border) / 8) solid var(--tertiary-color);
                     border-radius: 50%;
+                    padding: calc(var(--padding) / 8);
                 }
             }
             .menu{
                 display: flex;
-                flex-wrap: wrap;
-                & a{
-                    color: var(--font-dark);
-                    padding: 25px 10px;
+                gap: calc(var(--gap) * 1.25);
+                .nav_txt{
+                    color: var(--font-white);
                     transition: var(--transition);
                     text-decoration: none;
+                    position: relative;
+                    display: inline-block;
+                    font-size: var(--font-size);
+                    font-weight: 600;
                     &:hover{
-                        color: var(--tertiary-color);
+                        color: var(--font-tertiary-color);
+                    }
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        background-color: var(--tertiary-color);
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transition: width var(--transition) ease-out, left var(--transition) ease-out;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                        left: 0;
                     }
                 }
             }

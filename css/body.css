@@ -1,25 +1,26 @@
 :root{
-    --primary-color:#4A235A;
-    --secondary-color:#6C3483;
-    --tertiary-color:#9B59B6;
+    --primary-color:#42035e;
+    --secondary-color:#21618C;
+    --tertiary-color:#8f53a7;
     --dark-color:#000;
-    --dark-color-transp:#000000e8;
+    --dark-color-transp:#000000a2;
     --white-color:#fff;
-    --font-primary-color:##1A5276;
-    --font-secondary-color:##1F618D;
-    --font-tertiary-color:#2980B9;
+    --font-primary-color:#42035e;
+    --font-secondary-color:#21618C;
+    --font-tertiary-color:#8f53a7;
     --font-dark:#000;
     --font-white:#fff;
-    --font-family:monospace;
+    --font-family:'Nunito Sans', sans-serif;
+    --font-size:1rem;
+    --spacing-size:1rem;
     --padding:1rem;
     --margin:1rem;
     --gap:1rem;
-    --font-size:1rem;
-    --spacing-size:1rem;
     --border:1rem;
     --border-radius:1rem;
     --transition:.5s;
-    --max-width:1800px;
+    --max-width-xl:1800px;
+    --max-width-m:1200px;
 }
 
 *{
