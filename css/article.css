@@ -1,4 +1,73 @@
 
 .container_about-me{
-    background-color: var(--quaternary-color);
+    background: var(--quaternary-color);
+    padding: calc(var(--padding) * 6.25) 0;
+    & .conta_about-me{
+        max-width: var(--max-width-xl);
+        margin: auto;
+        & .cont_about-me{
+            max-width: var(--max-width-m);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: calc(var(--gap) * 3.75);
+            & .content_about-me{
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                & .about-me_img{
+                    width: 250px;
+                    & img{
+                        width: 100%;
+                        border-radius: 30px;
+                    }
+                }
+                & .social_about-me{
+                    display: flex;
+                    gap: calc(var(--gap) * 1.25);
+                    list-style: none;
+                    & a{
+                        padding: 0;
+                        background-color: inherit;
+                        color: white;
+                    }
+                }
+            }
+            & .first_content{
+                gap: 15px;
+                & a{
+                    text-decoration: none;
+                    background-color: white;
+                    padding: 5px 30px;
+                    color: var(--font-primary-color);
+                    border-radius: 20px;
+                    font-weight: bold;
+                }
+            }
+            & .second_content{
+                gap: 40px;
+                & p{
+                    line-height: 30px;
+                }
+                & .buttons_about-me{
+                    display: flex;
+                    gap: 40px;
+                    & a{
+                        text-decoration: none;
+                        text-align: center;
+                        color: var(--font-primary-color);
+                        background-color: white;
+                        width: 150px;
+                        padding: 5px 0;
+                        border-radius: 50px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 }

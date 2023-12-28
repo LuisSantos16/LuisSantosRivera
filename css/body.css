@@ -2,7 +2,7 @@
     --primary-color:#42035e;
     --secondary-color:#21618C;
     --tertiary-color:#8f53a7;
-    --quaternary-color:#E5E7E9;
+    --quaternary-color:linear-gradient(#7a1233, #220336);
     --dark-color:#000;
     --dark-color-transp:#000000ad;
     --white-color:#fff;
