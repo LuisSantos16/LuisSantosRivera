@@ -44,3 +44,17 @@
         }
     }
 }
+
+@media(width<=650px){
+    & .cont_banner{
+        & .img_luis{
+            margin-bottom: var(--margin);
+        }
+        & .content_banner{
+            margin-top: var(--margin);
+            & .banner_name{
+                font-size: calc(var(--font-size) * 1.5);
+            }
+        }
+    }
+}

@@ -5,10 +5,10 @@
     position: fixed;
     width: 100%;
     z-index: 4;
-    & .conta-header{
+    & .conta_header{
         max-width: var(--max-width-xl);
         margin: auto;
-        & .cont-header{
+        & .cont_header{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -68,8 +68,8 @@
 
 @media(width <=1200px){
     .header{
-        & .conta-header{
-            & .cont-header{
+        & .conta_header{
+            & .cont_header{
                 & .listabar{
                     display: block;
                     color: white;
@@ -110,6 +110,12 @@
                 }
             }
         }
+    }
+}
+
+@media(width<=650px){
+    & .logo{
+        padding: 5px;
     }
 }
 
