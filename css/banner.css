@@ -46,6 +46,12 @@
                                  0 0 calc(var(--spacing-size) / 1.6) var(--font-primary-color), 
                                  0 0 calc(var(--spacing-size) / 1.6) var(--font-tertiary-color);
                 }
+                & .banner_span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: calc(var(--gap) / 1.6);
+                }
             }
         }
     }
