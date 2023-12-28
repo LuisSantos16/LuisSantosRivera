@@ -72,7 +72,7 @@
             & .cont_header{
                 & .listabar{
                     display: block;
-                    color: white;
+                    color: var(--font-white);
                     cursor: pointer;
                 }
                 & .menu{
@@ -115,7 +115,7 @@
 
 @media(width<=650px){
     & .logo{
-        padding: 5px;
+        padding: calc(var(--padding) / 3.2);
     }
 }
 
