@@ -1,9 +1,46 @@
 
 .container_banner{
-    background-image: url(../img/bg.gif);
+    background-image: linear-gradient(var(--dark-color-transp),var(--dark-color-transp)),url(../img/bg.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .conta_banner{
+        max-width: var(--max-width-xl);
+        margin: auto;
+        & .cont_banner{
+            max-width: var(--max-width-m);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: calc(var(--gap) * 1.25);
+            & .img_luis{
+                width: 200px;
+                height: 250px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: 6px solid black;
+                    object-fit: cover;
+                    box-shadow: 0px 0px 10px var(--primary-color), 0px 0px 20px var(--primary-color), 0px 0px 20px var(--primary-color), 0px 0px 10px var(--primary-color);
+                }
+            }
+            & .content_banner{
+                display: grid;
+                gap: calc(var(--gap) * 1.25);
+                text-align: center;
+                color: var(--font-white);
+                & .banner_name, & .banner_paragraph, & .banner_span{
+                    text-shadow: 0px 0px 10px rgb(83, 7, 102), 0px 0px 10px rgb(201, 48, 240), 0px 0px 10px rgb(53, 22, 61), 0px 0px 10px rgb(70, 8, 85);
+                }
+            }
+        }
+    }
 }

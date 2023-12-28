@@ -5,29 +5,36 @@
     position: fixed;
     width: 100%;
     z-index: 4;
-    .conta-header{
+    & .conta-header{
         max-width: var(--max-width-xl);
         margin: auto;
-        .cont-header{
+        & .cont-header{
             display: flex;
             justify-content: space-between;
             align-items: center;
             max-width: var(--max-width-m);
             min-height: 80px;
             margin: auto;
-            .logo{
+            padding: 0 calc(var(--padding) / 1.25);
+            & .logo{
                 width: 50px;
-                img{
+                & img{
                     width: 100%;
-                    border: calc(var(--border) / 8) solid var(--tertiary-color);
+                    border: calc(var(--border) / 5) solid var(--tertiary-color);
                     border-radius: 50%;
                     padding: calc(var(--padding) / 8);
+                    background-color: var(--white-color);
                 }
             }
-            .menu{
+
+            & .listabar{
+                display: none;
+            }
+
+            & .menu{
                 display: flex;
                 gap: calc(var(--gap) * 1.25);
-                .nav_txt{
+                & .nav_txt{
                     color: var(--font-white);
                     transition: var(--transition);
                     text-decoration: none;
@@ -53,6 +60,53 @@
                         width: 100%;
                         left: 0;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media(width <=1200px){
+    .header{
+        & .conta-header{
+            & .cont-header{
+                & .listabar{
+                    display: block;
+                    color: white;
+                    cursor: pointer;
+                }
+                & .menu{
+                    display: none;
+                    position: relative;
+                    left: -120%;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: var(--dark-color-transp);
+                    gap: 0;
+                    transition: var(--transition);
+                    & .nav_txt{
+                        color: var(--font-white);
+                        padding: calc(var(--padding) * 1.25) 0;
+                        text-align: center;
+                        &:hover{
+                            background-color: var(--primary-color);
+                            color: var(--font-white);
+                        }
+                        &.no-hover:hover::after{
+                            width: 0;
+                            left: 0;
+                        }
+                    }
+                }
+
+                .lista-open{
+                    left: 0;
+                }
+
+                #menu-id{
+                    position: absolute;
+                    top: 80px;
+                    width: 100%;
                 }
             }
         }
